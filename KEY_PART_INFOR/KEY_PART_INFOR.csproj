@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3CBDC99-338F-404A-AE2E-3E0F81091196}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KEY_PART_INFOR</RootNamespace>
+    <AssemblyName>KEY_PART_INFOR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IEMES.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="data">
+      <HintPath>C:\Users\LY\Desktop\JAC_fAxle_diceng\JAC_fAxle\bin\Debug\data.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.CodeParser.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Sparkline.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Spreadsheet.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v15.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Xpo.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPdfViewer.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraScheduler.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraSpreadsheet.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraWizard.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntityHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="InterC">
+      <HintPath>E:\研究生资料\502参观\502参观OP030\502参观\bin\Debug\InterC.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.OPCAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.OPCAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>C:\Users\LY\Desktop\JAC_fAxle_diceng\JAC_fAxle\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi, Version=1.30.3.0, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OpcNetApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi.Com, Version=1.30.3.0, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OpcNetApi.Com.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Ae, Version=1.10.1.24, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\OpcRcw.Ae.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Comn, Version=1.10.1.21, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\OpcRcw.Comn.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Da, Version=3.0.2.22, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\OpcRcw.Da.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Dx, Version=1.0.1.21, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\OpcRcw.Dx.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Hda, Version=1.20.1.21, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\OpcRcw.Hda.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.ManagedDataAccess.DLL</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PulseButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PulseButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>C:\Users\Administrator\Desktop\ThoughtWorks.QRCode\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing">
+      <HintPath>..\..\..\..\ECM标签打印\4.0MES_系统开发_Manta标签打印_20200522V1.0_BySy - 副本\KEY_PART_INFOR\bin\Debug\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\..\..\..\ECM标签打印\4.0MES_系统开发_Manta标签打印_20200522V1.0_BySy - 副本\KEY_PART_INFOR\bin\Debug\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANDON\ANDON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANDON\ANDON.designer.cs">
+      <DependentUpon>ANDON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANDON\AgvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANDON\AgvForm.Designer.cs">
+      <DependentUpon>AgvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANDON\CreateAGVForm.cs" />
+    <Compile Include="ANDON\MaterialAndon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANDON\MaterialAndon.designer.cs">
+      <DependentUpon>MaterialAndon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckEquip.Designer.cs">
+      <DependentUpon>CheckEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassStore\AndonGetData.cs" />
+    <Compile Include="ClassStore\BalluffRfidHelper.cs" />
+    <Compile Include="ClassStore\CommonHelper.cs" />
+    <Compile Include="ClassStore\CS_PageInfo.cs" />
+    <Compile Include="ClassStore\DataBaseOpByEntity.cs" />
+    <Compile Include="ClassStore\DBhelperOracle.cs" />
+    <Compile Include="ClassStore\DbHelperMySql.cs" />
+    <Compile Include="ClassStore\DbHelperSQL.cs" />
+    <Compile Include="ClassStore\DeBarcode.cs" />
+    <Compile Include="ClassStore\EntityHelper.cs" />
+    <Compile Include="ClassStore\ExLogHelper.cs" />
+    <Compile Include="ClassStore\Extension.cs" />
+    <Compile Include="ClassStore\GetData.cs" />
+    <Compile Include="ClassStore\JsonHelper.cs" />
+    <Compile Include="ClassStore\KeyPartGetData.cs" />
+    <Compile Include="ClassStore\Md5Helper.cs" />
+    <Compile Include="ClassStore\MyMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassStore\MyMsgBox.Designer.cs">
+      <DependentUpon>MyMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassStore\PrimaryKeyAttribute.cs" />
+    <Compile Include="ClassStore\QQMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassStore\ReadConfigfile.cs" />
+    <Compile Include="ClassStore\ReadXML.cs" />
+    <Compile Include="ClassStore\ScannerHelper.cs" />
+    <Compile Include="ClassStore\JsonToEntityOrList.cs" />
+    <Compile Include="ClassStore\SerialPortConfig.cs" />
+    <Compile Include="ClassStore\ServerDictionary.cs" />
+    <Compile Include="ClassStore\ServerTime.cs" />
+    <Compile Include="ClassStore\SQLiteOperate.cs" />
+    <Compile Include="ClassStore\SystemLog.cs" />
+    <Compile Include="ClassStore\WebApiHttp.cs" />
+    <Compile Include="ClassStore\XmlHelper.cs" />
+    <Compile Include="Dto\AndonInfoItemDto.cs" />
+    <Compile Include="Dto\AndonTypeDto.cs" />
+    <Compile Include="Dto\AndonInfoDto.cs" />
+    <Compile Include="Dto\ReworkPartKeyInfo.cs" />
+    <Compile Include="Dto\ProductionLineInfoDto.cs" />
+    <Compile Include="Dto\EquipmentInfoDto.cs" />
+    <Compile Include="Dto\BasicInfoDto.cs" />
+    <Compile Include="Entity\A_BS_StaffInfo.cs" />
+    <Compile Include="Entity\D_HCL_PRINT_RECORD.cs" />
+    <Compile Include="Entity\P_HCL_SCAN_RECORD.cs" />
+    <Compile Include="Entity\HCL_PRINT_RECORD.cs" />
+    <Compile Include="Entity\GD_DCS_WARRANTYPARTS_INFO.cs" />
+    <Compile Include="Entity\Base_DataDictionary.cs" />
+    <Compile Include="Entity\Base_DataDictionaryDetail.cs" />
+    <Compile Include="Entity\Base_Module.cs" />
+    <Compile Include="Entity\Base_ObjectUserRelation.cs" />
+    <Compile Include="Entity\Base_Tag.cs" />
+    <Compile Include="Entity\BASE_USER.cs" />
+    <Compile Include="Entity\BOM.cs" />
+    <Compile Include="Entity\BOM_VERSION.cs" />
+    <Compile Include="Entity\CHECH_EQUIP_RESULT.cs" />
+    <Compile Include="Entity\CHECK_INFO.cs" />
+    <Compile Include="Entity\CHECK_STATION_INFO.cs" />
+    <Compile Include="Entity\CONCESSION_RELEASE.cs" />
+    <Compile Include="Entity\CONTROL_ADDRESS.cs" />
+    <Compile Include="Entity\DOC_EQUIP_STATUS.cs" />
+    <Compile Include="Entity\EQUIPMENT.cs" />
+    <Compile Include="Entity\Material_Order_Requirement.cs" />
+    <Compile Include="Entity\MATERIAL_WC_PART.cs" />
+    <Compile Include="Entity\PART.cs" />
+    <Compile Include="Entity\Part_List.cs" />
+    <Compile Include="Entity\Part_Supplier.cs" />
+    <Compile Include="Entity\DOC_ANDON_INFOR.cs" />
+    <Compile Include="Entity\PRODUCT_FAULT_ITEM.cs" />
+    <Compile Include="Entity\PRODUCT_FAULT_TYPE.cs" />
+    <Compile Include="Entity\PRODUCT_FA_MAIN_INFOR.cs" />
+    <Compile Include="Entity\PRODUCT_MAINTAIN_ITEM.cs" />
+    <Compile Include="Entity\PRODUCT_MAINTAIN_TYPE.cs" />
+    <Compile Include="Entity\P_ANDON_INFOR.cs" />
+    <Compile Include="Entity\P_ASSEMBLE_PRODUCT_STATE.cs" />
+    <Compile Include="Entity\P_KEY_PART_C.cs" />
+    <Compile Include="Entity\DOC_KEY_PART_INFOR.cs" />
+    <Compile Include="Entity\P_NOTOK_PRODUCT_INFOR.cs" />
+    <Compile Include="Entity\P_PLAN.cs" />
+    <Compile Include="Entity\P_PRODUCT_REPAIR_INFO.cs" />
+    <Compile Include="Entity\P_PRODUCT_SERIAL.cs" />
+    <Compile Include="Entity\DOC_REPAIR_TAG_INFO.cs" />
+    <Compile Include="Entity\P_REPAIR_TAG_INFO.cs" />
+    <Compile Include="Entity\P_TIGHTENING.cs" />
+    <Compile Include="Entity\QUALITY_GATE.cs" />
+    <Compile Include="Entity\QUALITY_GATE_FORCED_RELEASE.cs" />
+    <Compile Include="Entity\STATION.cs" />
+    <Compile Include="Entity\STOPPER.cs" />
+    <Compile Include="Entity\SYSTEM_CS.cs" />
+    <Compile Include="Entity\T_Log.cs" />
+    <Compile Include="Entity\T_ORDER_INFO.cs" />
+    <Compile Include="Entity\ANDON_INFO.cs" />
+    <Compile Include="Entity\ANDON_TYPE.cs" />
+    <Compile Include="Entity\ANDON_TYPE_INFO_LIST.cs" />
+    <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\DOC_ANDON_MATERIAL_NEED.cs" />
+    <Compile Include="Entity\DOC_NOTOK_PRODUCT_INFOR.cs" />
+    <Compile Include="Entity\P_ANDON_MATERIAL_NEED.cs" />
+    <Compile Include="Entity\P_KEY_PART_INFOR.cs" />
+    <Compile Include="ClassStore\WorkCenterInfor.cs" />
+    <Compile Include="Entity\GUIDFILES.cs" />
+    <Compile Include="Entity\WORK_CENTER.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideFiles\MyFilesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideFiles\MyFilesView.Designer.cs">
+      <DependentUpon>MyFilesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HfutIe.DataAccess\Attributes\PrimaryKeyAttribute.cs" />
+    <Compile Include="HfutIe.DataAccess\Common\CommonHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\Common\DESEncrypt.cs" />
+    <Compile Include="HfutIe.DataAccess\Config\ConfigHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DataBase\Database.cs" />
+    <Compile Include="HfutIe.DataAccess\DataBase\DatabaseCommon.cs" />
+    <Compile Include="HfutIe.DataAccess\DataBase\DatabaseReader.cs" />
+    <Compile Include="HfutIe.DataAccess\DataBase\IDatabase.cs" />
+    <Compile Include="HfutIe.DataAccess\DbExpand\AccessHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbExpand\MySqlHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbExpand\OracleHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbExpand\SQLiteHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbExpand\SqlServerHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DatabaseType.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DbFactory.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DbHelper.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DbHelperFactory.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DbHelperSQL1.cs" />
+    <Compile Include="HfutIe.DataAccess\DbProvider\DbOperation.cs" />
+    <Compile Include="HfutIe.DataAccess\DebugLog\Log.cs" />
+    <Compile Include="HfutIe.DataAccess\Entity\BaseEntity.cs" />
+    <Compile Include="HfutIe.DataAccess\Repository\DataFactory.cs" />
+    <Compile Include="HfutIe.DataAccess\Repository\IRepository.cs" />
+    <Compile Include="HfutIe.DataAccess\Repository\Repository.cs" />
+    <Compile Include="HfutIe.DataAccess\Repository\RepositoryFactory.cs" />
+    <Compile Include="IOPC.cs" />
+    <Compile Include="JAC_KEYPART_HCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_KEYPART_HCL.Designer.cs">
+      <DependentUpon>JAC_KEYPART_HCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_KEYPART_YZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_KEYPART_YZ.Designer.cs">
+      <DependentUpon>JAC_KEYPART_YZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_QPT_Hcl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_QPT_Hcl.Designer.cs">
+      <DependentUpon>JAC_QPT_Hcl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_QPT_HCL_M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_QPT_HCL_M.Designer.cs">
+      <DependentUpon>JAC_QPT_HCL_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_REPAIR_JJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_REPAIR_JJ.Designer.cs">
+      <DependentUpon>JAC_REPAIR_JJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_REPAIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_REPAIR.Designer.cs">
+      <DependentUpon>JAC_REPAIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAC_KEYPART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JAC_KEYPART.Designer.cs">
+      <DependentUpon>JAC_KEYPART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm1.designer.cs">
+      <DependentUpon>LoginForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginOp.cs" />
+    <Compile Include="Login\SetData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\SetData.designer.cs">
+      <DependentUpon>SetData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offline\QualityGate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offline\QualityGate.Designer.cs">
+      <DependentUpon>QualityGate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPCHelper.cs" />
+    <Compile Include="HZ_Keypart_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HZ_Keypart_Search.Designer.cs">
+      <DependentUpon>HZ_Keypart_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanSearch.Designer.cs">
+      <DependentUpon>PlanSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReworkForm\ChoseReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReworkForm\ChoseReplace.Designer.cs">
+      <DependentUpon>ChoseReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReworkForm\Rework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReworkForm\Rework.Designer.cs">
+      <DependentUpon>Rework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidateForm.designer.cs">
+      <DependentUpon>ValidateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="实体\DCS.cs" />
+    <Compile Include="实体\DCS_PARM.cs" />
+    <Compile Include="实体\DOC_ASSEMBLE_PRODUCT_STATE.cs" />
+    <Compile Include="实体\DOC_TIGHTENING.cs" />
+    <Compile Include="实体\PRODUCT_DCS_PARM_LIST.cs" />
+    <Compile Include="实体\PRODUCT_TIGHT_CHECK.cs" />
+    <Compile Include="实体\P_DCS_QK_OP_A2740.cs" />
+    <Compile Include="实体\P_QUALITY_ELIMINATION.cs" />
+    <Compile Include="实体\P_SAFE_ELIMINATION .cs" />
+    <Compile Include="实体\SafeAdd.cs" />
+    <EmbeddedResource Include="ANDON\ANDON.resx">
+      <DependentUpon>ANDON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANDON\AgvForm.resx">
+      <DependentUpon>AgvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANDON\MaterialAndon.resx">
+      <DependentUpon>MaterialAndon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckEquip.resx">
+      <DependentUpon>CheckEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassStore\QQMessageBox.resx">
+      <DependentUpon>QQMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideFiles\MyFilesView.resx">
+      <DependentUpon>MyFilesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_KEYPART_HCL.resx">
+      <DependentUpon>JAC_KEYPART_HCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_KEYPART_YZ.resx">
+      <DependentUpon>JAC_KEYPART_YZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_QPT_Hcl.resx">
+      <DependentUpon>JAC_QPT_Hcl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_QPT_HCL_M.resx">
+      <DependentUpon>JAC_QPT_HCL_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_REPAIR_JJ.resx">
+      <DependentUpon>JAC_REPAIR_JJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_REPAIR.resx">
+      <DependentUpon>JAC_REPAIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JAC_KEYPART.resx">
+      <DependentUpon>JAC_KEYPART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm1.resx">
+      <DependentUpon>LoginForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\SetData.resx">
+      <DependentUpon>SetData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offline\QualityGate.resx">
+      <DependentUpon>QualityGate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HZ_Keypart_Search.resx">
+      <DependentUpon>HZ_Keypart_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanSearch.resx">
+      <DependentUpon>PlanSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateForm.resx">
+      <DependentUpon>ValidateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReworkForm\ChoseReplace.resx">
+      <DependentUpon>ChoseReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReworkForm\Rework.resx">
+      <DependentUpon>Rework.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Config1\Print.xml" />
+    <Content Include="bin\Debug\Config1\SerialPortConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="IEMES.ico" />
+    <None Include="Resources\已开启3.png" />
+    <None Include="Resources\未开启.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resouce\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
