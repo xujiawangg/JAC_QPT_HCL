@@ -20,6 +20,7 @@ namespace KEY_PART_INFOR
     public partial class JAC_QPT_HCL_M : Form
     {
         #region 公共变量
+        string test = "";
         string printAssembleCode = "";
         string manualPrintAssembleCode = "";
         public string PrintName = ReadXML.GetPrintName(System.Windows.Forms.Application.StartupPath + @"\Config1\Print.xml");
@@ -334,7 +335,8 @@ namespace KEY_PART_INFOR
                 MessageBox.Show(ee.Message);
             }
         }
-        //private void printDocument_PrintA4Page1_Manual(object sender, PrintPageEventArgs e)
+      e.Substring(26, i1 - 26);
+        //        //}  //private void printDocument_PrintA4Page1_Manual(object sender, PrintPageEventArgs e)
         //{
         //    Font f1 = new Font("黑体", 11, System.Drawing.FontStyle.Bold);
         //    Font f2 = new Font("黑体", 12, System.Drawing.FontStyle.Bold);
@@ -375,8 +377,7 @@ namespace KEY_PART_INFOR
         //        //int i1 = firstCode.Length;
         //        //if (firstCode.Length > 26)
         //        //{
-        //        //    str = firstCode.Substring(0, 26) + "\n" + firstCode.Substring(26, i1 - 26);
-        //        //}
+        //        //    str = firstCode.Substring(0, 26) + "\n" + firstCod
         //        //else
         //        //{
         //        //    str = firstCode;
